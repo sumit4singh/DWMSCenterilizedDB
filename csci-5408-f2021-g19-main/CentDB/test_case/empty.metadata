@@ -1,0 +1,3 @@
+column|type|constraints|foreign_key_table|foreign_key_col
+id|int|primary key||
+name|varchar|||

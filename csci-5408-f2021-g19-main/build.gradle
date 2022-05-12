@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.centdb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+println  "Root project:   ${project.rootProject}";
+println  "rootDir:      ${project.rootDir}"
+println  "projectDir:   ${project.projectDir}";
+println  "project dir:  ${System.getProperty("user.dir")}";
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+	implementation 'com.google.code.gson:gson:2.8.7'
+	implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+}
+
+test {
+	useJUnitPlatform()
+}

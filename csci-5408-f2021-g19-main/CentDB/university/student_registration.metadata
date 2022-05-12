@@ -1,0 +1,4 @@
+column|type|constraints|foreign_key_table|foreign_key_col
+id|int|primary key||
+student_id|int|foreign key|student|id
+course_id|int|foreign key|course|id
